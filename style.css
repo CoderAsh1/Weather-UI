@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.material-icons-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(181, 216, 255);
+}
+
+.wrapper {
+  background: rgb(92, 156, 229);
+  height: 86vh;
+  width: 70vw;
+  border-radius: 2rem;
+  display: flex;
+}
+.wrapper .left {
+  height: 100%;
+  flex: 0.3;
+  padding: 1.6rem 1.2rem;
+}
+.wrapper .left span:not(.plus) {
+  font-size: 14px;
+  margin-right: 0.4rem;
+}
+.wrapper .left .plus {
+  background: white;
+  border-radius: 0.4rem;
+}
+.wrapper .left .top {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .left .top .switchbox {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.wrapper .left .top .switchbox span {
+  font-size: 10px;
+}
+.wrapper .left .middle {
+  color: white;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wrapper .left .middle div {
+  display: flex;
+  align-items: center;
+}
+.wrapper .left .middle div .icon {
+  margin-left: auto;
+}
+.wrapper .left .bottom {
+  margin-top: 2rem;
+  width: 100%;
+}
+.wrapper .left .bottom div:not(.sunny) {
+  justify-content: space-between;
+}
+.wrapper .left .bottom .sunny {
+  width: 85%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .left .bottom div {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.wrapper .left .bottom div h1 {
+  font-size: 60px;
+  display: flex;
+  font-weight: 500;
+}
+.wrapper .right {
+  height: 100%;
+  flex: 1;
+  background: rgb(228, 241, 255);
+  border-radius: 2rem;
+}
+
+.chart {
+  height: 100%;
+  width: 30vw;
+}/*# sourceMappingURL=style.css.map */
