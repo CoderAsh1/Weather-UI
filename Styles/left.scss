@@ -1,0 +1,66 @@
+.left {
+  span:not(.plus) {
+    font-size: 14px;
+    margin-right: 0.4rem;
+  }
+  height: 100%;
+  flex: 0.3;
+  padding: 1.6rem 1.2rem;
+  .plus {
+    background: white;
+    border-radius: 0.4rem;
+  }
+  .top {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    .switchbox {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: 600;
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+  .middle {
+    color: white;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-left: auto;
+      }
+    }
+  }
+  .bottom {
+    margin-top: 2rem;
+    width: 100%;
+    div:not(.sunny) {
+      justify-content: space-between;
+    }
+    .sunny {
+      width: 85%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    div {
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      h1 {
+        font-size: 60px;
+        display: flex;
+        font-weight: 500;
+      }
+    }
+  }
+}

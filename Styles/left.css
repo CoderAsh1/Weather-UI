@@ -1,0 +1,65 @@
+.left {
+  height: 100%;
+  flex: 0.3;
+  padding: 1.6rem 1.2rem;
+}
+.left span:not(.plus) {
+  font-size: 14px;
+  margin-right: 0.4rem;
+}
+.left .plus {
+  background: white;
+  border-radius: 0.4rem;
+}
+.left .top {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.left .top .switchbox {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.left .top .switchbox span {
+  font-size: 10px;
+}
+.left .middle {
+  color: white;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.left .middle div {
+  display: flex;
+  align-items: center;
+}
+.left .middle div .icon {
+  margin-left: auto;
+}
+.left .bottom {
+  margin-top: 2rem;
+  width: 100%;
+}
+.left .bottom div:not(.sunny) {
+  justify-content: space-between;
+}
+.left .bottom .sunny {
+  width: 85%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.left .bottom div {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.left .bottom div h1 {
+  font-size: 60px;
+  display: flex;
+  font-weight: 500;
+}/*# sourceMappingURL=left.css.map */

@@ -8,6 +8,7 @@
 .material-icons-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -21,133 +22,6 @@ body {
   border-radius: 2rem;
   display: flex;
   background: url("../Assets/bg.jpg");
-  // background-position: -100px 300px;
   object-fit: cover;
   background-repeat: no-repeat;
-  .left {
-    span:not(.plus) {
-      font-size: 14px;
-      margin-right: 0.4rem;
-    }
-    height: 100%;
-    flex: 0.3;
-    padding: 1.6rem 1.2rem;
-    .plus {
-      background: white;
-      border-radius: 0.4rem;
-    }
-    .top {
-      margin-bottom: 2rem;
-      display: flex;
-      justify-content: space-between;
-      .switchbox {
-        display: flex;
-        align-items: center;
-        color: white;
-        font-weight: 600;
-        span {
-          font-size: 10px;
-        }
-      }
-    }
-    .middle {
-      color: white;
-      display: flex;
-      font-size: 14px;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      div {
-        display: flex;
-        align-items: center;
-        .icon {
-          margin-left: auto;
-        }
-      }
-    }
-    .bottom {
-      margin-top: 2rem;
-      width: 100%;
-      div:not(.sunny) {
-        justify-content: space-between;
-      }
-      .sunny {
-        width: 85%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-      }
-      div {
-        color: white;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        h1 {
-          font-size: 60px;
-          display: flex;
-          font-weight: 500;
-        }
-      }
-    }
-  }
-  .right {
-    height: 100%;
-    padding: 1.6rem;
-    flex: 1;
-    background: rgb(228, 241, 255);
-    border-radius: 2rem;
-    header {
-      display: flex;
-      justify-content: space-between;
-      div {
-        img {
-          border-radius: 0.5rem;
-        }
-      }
-    }
-    .main_chart {
-      background-color: white;
-      border-radius: 2rem;
-      padding: 1rem;
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      .head {
-        display: flex;
-        align-items: center;
-      }
-      select {
-        margin-left: auto;
-        margin-right: 1rem;
-      }
-      select,
-      button {
-        border: none;
-        background: rgb(211, 211, 211);
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        border-radius: 0.5rem;
-        padding: 0 6px;
-      }
-      .chart_container {
-        span {
-          font-size: 14px;
-        }
-        .stats {
-          display: flex;
-          justify-content: space-between;
-          padding: 0.5rem;
-          .stat {
-            text-align: center;
-          }
-        }
-        .chart {
-          width: 39rem;
-          height: 5rem;
-        }
-      }
-    }
-  }
 }
