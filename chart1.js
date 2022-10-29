@@ -1,14 +1,14 @@
 const ctx = document.querySelector("#myChart").getContext("2d");
-const labels = ["10%", "32", "45", "16", "20", "12"];
+const labels = ["10%", "32%", "45%", "16%", "20%", "12%", "60%", "44%"];
 
 const data = {
   labels,
   datasets: [
     {
       data: [211, 326, 165, 350, 420, 370, 500, 375, 415],
-      label: "erater",
+      label: "Weather",
       fill: true,
-      backgroundColor: "skyBlue",
+      backgroundColor: "rgb(92, 156, 228)",
     },
   ],
 };
@@ -18,6 +18,20 @@ const config = {
   type: "line",
   data: data,
   options: {
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        display: false,
+        ticks: {
+          stepSize: 200,
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
     responsive: true,
     animation: {
       onComplete: () => {
@@ -29,14 +43,6 @@ const config = {
           delay = context.dataIndex * 300 + context.datasetIndex * 100;
         }
         return delay;
-      },
-    },
-    scales: {
-      x: {
-        stacked: true,
-      },
-      y: {
-        stacked: true,
       },
     },
   },

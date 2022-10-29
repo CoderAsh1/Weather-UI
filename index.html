@@ -9,12 +9,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="switch.css" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/switch.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="left">
+      <!-- left -------------- -->
+      <aside class="left">
         <div class="top">
           <span class="material-symbols-outlined plus"> add </span>
           <div class="switchbox">
@@ -26,6 +27,7 @@
             <span>&#8457;</span>
           </div>
         </div>
+
         <div class="middle">
           <div>
             <span class="material-symbols-outlined"> near_me </span>
@@ -39,6 +41,7 @@
             <p>17:30</p>
           </div>
         </div>
+
         <div class="bottom">
           <div>
             <span class="material-symbols-outlined"> chevron_left </span>
@@ -50,12 +53,91 @@
             <span>Sunny</span>
           </div>
         </div>
-      </div>
-      <div class="right"></div>
+      </aside>
+
+      <!-- Right -------------- -->
+      <main class="right">
+        <header>
+          <div>
+            <h4>Welcome back Ashutosh!</h4>
+            <h5>Check out today's weather information</h5>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> more_horiz </span>
+            <img src="./Assets/profilePic.jpg" alt="" height="30px" />
+          </div>
+        </header>
+        <div class="main_chart">
+          <div class="head">
+            <h4>Upcoming hours</h4>
+            <select disabled>
+              <option>Rain Perception</option>
+            </select>
+            <button>
+              Next days
+              <span class="material-symbols-outlined"> chevron_right </span>
+            </button>
+          </div>
+          <div class="chart_container">
+            <div class="stats">
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined"
+                  ><span class="material-symbols-outlined">
+                    cloudy_snowing
+                  </span>
+                </span>
+                <h4>27&#176;</h4>
+              </div>
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined">sunny </span>
+                <h4>32&#176;</h4>
+              </div>
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined">sunny </span>
+                <h4>32&#176;</h4>
+              </div>
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined">sunny </span>
+                <h4>39&#176;</h4>
+              </div>
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined"
+                  ><span class="material-symbols-outlined"> thunderstorm </span>
+                </span>
+                <h4>22&#176;</h4>
+              </div>
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined">sunny </span>
+                <h4>26&#176;</h4>
+              </div>
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined"
+                  ><span class="material-symbols-outlined">
+                    cloudy_filled
+                  </span>
+                </span>
+                <h4>24&#176;</h4>
+              </div>
+              <div class="stat">
+                <h6>Now</h6>
+                <span class="material-symbols-outlined">sunny </span>
+                <h4>27&#176;</h4>
+              </div>
+            </div>
+            <div class="chart">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-    <!-- <div class="chart">
-      <canvas id="myChart"></canvas>
-    </div> -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
