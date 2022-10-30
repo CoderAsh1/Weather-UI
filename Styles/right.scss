@@ -130,14 +130,19 @@
         .chart {
           width: 80%;
           height: 8rem;
-
           position: absolute;
           background: none;
           top: -5px;
           align-self: center;
         }
+        img {
+          position: absolute;
+          top: 40%;
+          left: 47%;
+          translate: -50% 0;
+        }
         h2 {
-          margin-top: 2rem;
+          margin-top: 2.8rem;
         }
       }
       .percipitation {
