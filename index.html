@@ -139,48 +139,140 @@
           </div>
         </div>
         <div class="more_chats">
-          <h4>More details of today's weather</h4>
+          <h5>More details of today's weather</h5>
           <div class="detail_chats">
-            <div class="humidity">
+            <div class="humidity container">
               <div class="head">
                 <h4>Humidity</h4>
-                <span class="material-symbols-outlined"> humidity_low </span>
+                <span class="material-symbols-outlined">humidity_low</span>
               </div>
               <h2>
                 82%
                 <span>bad</span>
+              </h2>
+              <div class="reading">
+                <span class="stat">
+                  <span>good </span>
+                  <span>normal </span>
+                  <span>bad</span>
+                </span>
+                <span class="progress">
+                  <progress id="file" value="100" max="100"></progress>
+                  <progress id="file" value="100" max="100"></progress>
+                  <progress id="file" value="32" max="100"></progress>
+                </span>
+              </div>
+            </div>
+            <div class="wind container">
+              <div class="head">
+                <h4>Wind</h4>
+                <span class="material-symbols-outlined"> air </span>
+              </div>
+              <h2>8 Km/h</h2>
+
+              <div class="chart">
+                <canvas id="myWindChart"></canvas>
+              </div>
+            </div>
+
+            <div class="percipitation container">
+              <div class="head">
+                <h4>Percipitation</h4>
+                <span class="material-symbols-outlined"> rainy </span>
+              </div>
+              <h2>1.5 cm</h2>
+              <div class="stat">
+                <span
+                  >0<progress id="file" value="100" max="100"></progress>
+                </span>
+                <span
+                  >10<progress id="file" value="100" max="100"></progress
+                ></span>
+                <span
+                  >20<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >30<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >40<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >50<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >60<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >70<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >80<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >90<progress id="file" value="0" max="100"></progress
+                ></span>
+              </div>
+            </div>
+            <div class="uv_index container">
+              <div class="head">
+                <h4>UV index</h4>
+                <span class="material-symbols-outlined"> sunny </span>
+              </div>
+              <h2>
+                4
+                <span>medium</span>
               </h2>
               <div class="stat">
                 <span
-                  >good<progress id="file" value="100" max="100">32%</progress>
+                  >0-2<progress id="file" value="100" max="100"></progress>
                 </span>
                 <span
-                  >normal<progress id="file" value="100" max="100">
-                    32%
-                  </progress></span
-                >
+                  >3-5<progress id="file" value="40" max="100"></progress
+                ></span>
                 <span
-                  >bad<progress id="file" value="32" max="100">
-                    32%
-                  </progress></span
-                >
+                  >6-7<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >8-10<progress id="file" value="0" max="100"></progress
+                ></span>
+                <span
+                  >10+<progress id="file" value="0" max="100"></progress
+                ></span>
               </div>
             </div>
-            <div class="wind">
+            <div class="feels_like container">
               <div class="head">
-                <h4>Wind</h4>
-                <span class="material-symbols-outlined"> humidity_low </span>
+                <h4>Feels Like</h4>
+                <span class="material-symbols-outlined"> thermometer </span>
               </div>
-              <h2>
-                82%
-                <span>bad</span>
-              </h2>
+              <h2>30&deg;</h2>
+              <div class="stat">
+                <span class="temp">
+                  <span>0&deg;</span>
+                  <span>25&deg;</span>
+                  <span>50&deg;</span>
+                </span>
+                <progress id="file" value="70" max="100"></progress>
+              </div>
             </div>
-
-            <!-- <div class="percipitation"></div>
-            <div class="uv_index"></div>
-            <div class="feels_like"></div>
-            <div class="chance_of_rain"></div> -->
+            <div class="feels_like chances container">
+              <div class="head">
+                <h4>Chances of rain</h4>
+                <span class="material-symbols-outlined"> umbrella </span>
+              </div>
+              <h2>42%</h2>
+              <span class="stat">
+                <div class="temp">
+                  <span>0%</span>
+                  <span>25%</span>
+                  <span>50%</span>
+                  <span>75%</span>
+                  <span>100%</span>
+                </div>
+                <progress id="file" value="70" max="100"></progress>
+              </span>
+            </div>
           </div>
         </div>
       </main>
@@ -193,7 +285,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="app.js"></script>
-    <script src="./Scripts/chart1.js"></script>
-    <script src="./Scripts/windMeter.js"></script>
+    <script src="./Scripts/chart.js"></script>
   </body>
 </html>

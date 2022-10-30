@@ -1,5 +1,4 @@
 .right {
-  height: 100%;
   padding: 1.6rem;
   flex: 1;
   background: rgb(228, 241, 255);
@@ -13,6 +12,7 @@
       }
     }
   }
+
   .main_chart {
     background-color: white;
     border-radius: 2rem;
@@ -52,35 +52,42 @@
         }
       }
       .chart {
-        width: 39rem;
+        max-width: 39rem;
+        width: inherit;
         height: 5rem;
       }
     }
   }
   .more_chats {
     margin-top: 2rem;
+    h5 {
+      margin-bottom: 1rem;
+    }
     .detail_chats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      div {
+      gap: 2rem;
+      .container {
         font-size: 12px;
         background: rgb(255, 255, 255);
         border-radius: 2rem;
-        padding: 0.5rem 0.6rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
-        position: relative;
-        gap: 0;
+        justify-content: space-between;
+        height: 7rem;
+        span {
+          color: gray;
+          font-size: 10px;
+        }
         .head {
-          //   display: flex;
+          width: 100%;
+          display: flex;
           flex-direction: row;
           justify-content: space-between;
           span {
             color: white;
-            position: absolute;
-            right: 10px;
-            top: 8px;
+            flex: 0.1;
             background: rgb(92, 156, 228);
             padding: 0.1rem;
             font-size: 15px;
@@ -98,13 +105,82 @@
       }
       // specific chats
       .humidity {
+        background: rgb(255, 255, 255);
+        .reading {
+          .stat {
+            display: flex;
+            span {
+              margin-right: auto;
+            }
+          }
+          .progress {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            progress {
+              width: 3.1rem;
+            }
+          }
+        }
+      }
+      .wind {
+        z-index: 200;
+        position: relative;
+        display: flex;
+        .chart {
+          width: 80%;
+          height: 8rem;
+
+          position: absolute;
+          background: none;
+          top: -5px;
+          align-self: center;
+        }
+        h2 {
+          margin-top: 2rem;
+        }
+      }
+      .percipitation {
         .stat {
           display: flex;
           flex-direction: row;
-          gap: 1rem;
+          gap: 4px;
           font-size: 12px;
           progress {
-            width: 3rem;
+            width: 10px;
+          }
+          span {
+            color: gray;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      .uv_index {
+        .stat {
+          display: flex;
+          flex-direction: row;
+          gap: 4px;
+          font-size: 12px;
+          progress {
+            width: 2rem;
+          }
+          span {
+            color: gray;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      .feels_like {
+        .stat {
+          .temp {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          progress {
+            width: 100%;
           }
         }
       }

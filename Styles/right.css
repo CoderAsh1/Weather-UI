@@ -1,5 +1,4 @@
 .right {
-  height: 100%;
   padding: 1.6rem;
   flex: 1;
   background: rgb(228, 241, 255);
@@ -51,55 +50,123 @@
   text-align: center;
 }
 .right .main_chart .chart_container .chart {
-  width: 39rem;
+  max-width: 39rem;
+  width: inherit;
   height: 5rem;
 }
 .right .more_chats {
   margin-top: 2rem;
 }
+.right .more_chats h5 {
+  margin-bottom: 1rem;
+}
 .right .more_chats .detail_chats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
-.right .more_chats .detail_chats div {
+.right .more_chats .detail_chats .container {
   font-size: 12px;
   background: rgb(255, 255, 255);
   border-radius: 2rem;
-  padding: 0.5rem 0.6rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  position: relative;
-  gap: 0;
+  justify-content: space-between;
+  height: 7rem;
 }
-.right .more_chats .detail_chats div .head {
+.right .more_chats .detail_chats .container span {
+  color: gray;
+  font-size: 10px;
+}
+.right .more_chats .detail_chats .container .head {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.right .more_chats .detail_chats div .head span {
+.right .more_chats .detail_chats .container .head span {
   color: white;
-  position: absolute;
-  right: 10px;
-  top: 8px;
+  flex: 0.1;
   background: rgb(92, 156, 228);
   padding: 0.1rem;
   font-size: 15px;
   border-radius: 0.3rem;
 }
-.right .more_chats .detail_chats div h2 {
+.right .more_chats .detail_chats .container h2 {
   text-align: center;
   width: 100%;
 }
-.right .more_chats .detail_chats div h2 span {
+.right .more_chats .detail_chats .container h2 span {
   font-weight: 400;
   font-size: 16px;
 }
-.right .more_chats .detail_chats .humidity .stat {
+.right .more_chats .detail_chats .humidity {
+  background: rgb(255, 255, 255);
+}
+.right .more_chats .detail_chats .humidity .reading .stat {
+  display: flex;
+}
+.right .more_chats .detail_chats .humidity .reading .stat span {
+  margin-right: auto;
+}
+.right .more_chats .detail_chats .humidity .reading .progress {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.right .more_chats .detail_chats .humidity .reading .progress progress {
+  width: 3.1rem;
+}
+.right .more_chats .detail_chats .wind {
+  z-index: 200;
+  position: relative;
+  display: flex;
+}
+.right .more_chats .detail_chats .wind .chart {
+  width: 80%;
+  height: 8rem;
+  position: absolute;
+  background: none;
+  top: -5px;
+  align-self: center;
+}
+.right .more_chats .detail_chats .wind h2 {
+  margin-top: 2rem;
+}
+.right .more_chats .detail_chats .percipitation .stat {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 4px;
   font-size: 12px;
 }
-.right .more_chats .detail_chats .humidity .stat progress {
-  width: 3rem;
+.right .more_chats .detail_chats .percipitation .stat progress {
+  width: 10px;
+}
+.right .more_chats .detail_chats .percipitation .stat span {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+}
+.right .more_chats .detail_chats .uv_index .stat {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  font-size: 12px;
+}
+.right .more_chats .detail_chats .uv_index .stat progress {
+  width: 2rem;
+}
+.right .more_chats .detail_chats .uv_index .stat span {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+}
+.right .more_chats .detail_chats .feels_like .stat .temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right .more_chats .detail_chats .feels_like .stat progress {
+  width: 100%;
 }/*# sourceMappingURL=right.css.map */

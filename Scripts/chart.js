@@ -1,4 +1,4 @@
-const ctxy = document.querySelector("#myWindChart").getContext("2d");
+const ctx = document.querySelector("#myChart").getContext("2d");
 const labels = ["10%", "32%", "45%", "16%", "20%", "12%", "60%", "44%"];
 
 const data = {
@@ -48,4 +48,42 @@ const config = {
   },
 };
 
-const myChart = new Chart(ctxy, config);
+const myChart = new Chart(ctx, config);
+
+//2nd chart
+const ctxx = document.querySelector("#myWindChart").getContext("2d");
+const dataa = {
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [100, 100, 100, 100, 100],
+      backgroundColor: [
+        "rgb(92, 156, 228)",
+        "rgb(92, 156, 228)",
+        "rgb(220, 220, 220)",
+        "rgb(220, 220, 220)",
+        "rgb(220, 220, 220)",
+      ],
+      cutout: "80%",
+      borderRadius: 20,
+      offset: 10,
+    },
+  ],
+};
+
+const configg = {
+  type: "doughnut",
+  data: dataa,
+  options: {
+    maintainAspectRatio: false,
+    events: [],
+    circumference: 180,
+    rotation: 270,
+  },
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+};
+const myChart2 = new Chart(ctxx, configg);

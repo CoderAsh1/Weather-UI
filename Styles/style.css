@@ -19,12 +19,11 @@ body {
 }
 
 .wrapper {
-  height: 90vh;
   width: 70vw;
   border-radius: 2rem;
   display: flex;
   background: url("../Assets/bg.jpg");
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   background-repeat: no-repeat;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
